@@ -36,12 +36,13 @@
                         </div> -->
                         <div class="area-info">
                             <h4 class="titulos">Histórico da variável Independente(X)</h4>
-                            <input type="text" placeholder="Ex:10;20;30" name="varX" class="inputs">
+                            <input type="text" placeholder="Ex:10;20;30" name="varX" id="vI" class="inputs">
                         </div>
                         <div class="area-info">
                             <h4 class="titulos">Histórico da variável Dependente(Y)</h4>
-                            <input type="text" placeholder="Ex:8;30;15;7" name="varY" class="inputs input-dados">
-                            <button class="btns">Escolha um Arquivo</button>
+                            <input type="text" placeholder="Ex:8;30;15;7" name="varY" id="vD" class="inputs input-dados">
+                            <label class="text-selecao" for="selecao-arquivo">Selecione um arquivo</label>
+                            <input id="selecao-arquivo" class="es btns seleciona-arq" type="file" onchange="pegaCSV(this)" accept=".csv , .txt" >
                         </div>
                         <div class="enviar-form">
                             <button class="btns btn-verificar" name="calc">Calcular</button>
@@ -57,4 +58,23 @@
     <script src="./../js/jquery/jquery-3.4.1.slim.min.js"></script>
     <script src="./../js/nav.js"></script>
     <script src="./../js/menu.js"></script>
+    <script>
+        var leitorDeCSV = new FileReader()
+        window.onload = function init() {
+            leitorDeCSV.onload = leCSV;
+        }
+
+        function pegaCSV(inputFile) {
+            var file = inputFile.files[0];
+            leitorDeCSV.readAsText(file);
+        }
+
+        function leCSV(evt) {
+            var fileArr = evt.target.result;
+            fileArr =  fileArr.split("\n")
+            document.getElementById("vI").value = fileArr[0]
+            document.getElementById("vD").value = fileArr[1]
+
+        }
+    </script>
 </html>

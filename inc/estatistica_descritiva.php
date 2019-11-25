@@ -121,7 +121,8 @@
                                 <div class="area-info">
                                     <h4 class="titulos">Entrada de dados</h4>
                                     <input type="text" placeholder="Ex:8;30;15;7" required class="inputs input-dados" name="dado" id="dados">
-                                    <button class="es btns">Escolha um Arquivo</button>
+                                    <label class="text-selecao" for="selecao-arquivo">Selecione um arquivo</label>
+                                    <input id="selecao-arquivo" class="es btns seleciona-arq" type="file" onchange="pegaCSV(this)" accept=".csv , .txt" >
                                 </div>
                                 <div class="enviar-form">
                                     <button class="ver btns btn-verificar">Verificar</button>
@@ -212,6 +213,25 @@
             habilita();
             arrasta();
         }
+
+        var leitorDeCSV = new FileReader()
+        window.onload = function init() {
+            leitorDeCSV.onload = leCSV;
+        }
+
+        function pegaCSV(inputFile) {
+            var file = inputFile.files[0];
+            leitorDeCSV.readAsText(file);
+        }
+
+        function leCSV(evt) {
+
+        var fileArr = evt.target.result;
+        
+
+            document.getElementById("dados").value = fileArr
+        }
+
     </script>
     
     
