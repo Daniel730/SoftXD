@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-image: url('./../img/money-site-x-pbn-fundo.jpg');
+    background-size: cover;
+}
+
+.area-login-adm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.login-adm {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+    /* max-height: 200px;
+    height: 100%; */
+    background-color: rgba(34, 34, 34, 0.6);
+    /* border: 1px solid red; */
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-adm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    /* width: 100%; */
+    /* border: 1px solid blue; */
+}
+
+.title-login, label{
+    color: white;
+}
+
+.title-login {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.icon-login {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    /* border: 1px solid red; */
+}
+
+.icons {
+    width: 100%;
+    height: 100%;
+}
+
+.campos-form {
+    display: flex;
+    align-items: center;
+}
+
+.inputs-adm {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.input-user {
+    margin: 10px 0;
+}
+
+.input-senha {
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.esqueceu-senha {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.esqueceu-senha > a {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.esqueceu-senha >a:hover {
+    color: rgb(228, 227, 227);
+}
+
+.btn-logar {
+    width: 100px;
+    padding: 5px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(12, 57, 153);
+}
+
+.btn-logar:hover {
+    background-color: rgb(9, 44, 119);
+}

@@ -1,0 +1,199 @@
+
+
+.area-principal-descritiva {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    overflow: auto;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+}
+
+.form-descritiva {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.titulo-variavel {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 98%;
+}
+
+.area-radio-btn {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 100%;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 4px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    /* border: 1px solid red; */
+}
+
+input {
+    margin: 0 !important;
+}
+
+.text-radio {
+    margin-left: 5px;
+    margin-right: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.container-radio {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.area-info{
+    margin-top: 10px;
+    width: 98%;
+    height: auto; 
+    /* border: 1px solid red; */
+}
+
+.titulos {
+    margin-bottom: 5px !important;
+}
+
+.inputs {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px !important;
+    border: none; 
+    outline: none;
+    border:solid 1px #ccc;
+    border-radius: 10px;
+    padding-left: 5px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+}
+
+.input-dados {
+    margin-bottom: 10px !important;
+}
+
+.btns {
+    height: 30px;
+    padding: 3px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid rgb(164, 189, 212);
+    border-radius: 5px;
+    outline: none; 
+    color: white;
+    cursor: pointer;
+    background-color: rgb(56, 85, 167);
+    
+}
+
+.btns:hover {
+    background-color: rgb(36, 36, 148);
+}
+
+.btn-verificar {
+    font-size: 18px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 650px) {
+    .form-descritiva {
+        width: 95%;
+    }
+
+    .titulo-form {
+        font-size: 23px;
+    }
+
+    .titulos {
+        font-size: 16px;
+    }
+
+    .area-radio-btn {
+        flex-direction: column;
+        height: auto;
+    }
+    .container-radio {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        width: 100%;
+    }
+    .text-radio {
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 300px) { 
+
+    .titulo-form {
+        font-size: 16px;
+    }
+
+    .titulo-form {
+        font-size: 14px;
+    }
+
+    .titulos {
+        font-size: 12px;
+    }
+}
+.pointer-range{
+    flex-direction: column;
+    padding: 15px;
+}
+.txt-pointer{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+.input-range{
+    -webkit-appearance: none;
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    opacity: 0.7;
+}
+.input-range:hover{
+    opacity: 1;
+}
+.input-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(65, 65, 255);
+    cursor: pointer;
+}
+.input-qtd-dados{
+    margin-bottom: 10px !important;
+    width: 100px;
+}
+
+.entre{
+    width: unset;
+}
+.entre-div{
+    display: flex;
+}
+.entre-text{
+    margin: 0 5px !important;
+}
+
+
